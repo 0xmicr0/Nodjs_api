@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const router = require("./routs/routs.courses.js");
 const routerUser = require("./routs/routs.users.js");
 const httpResSt = require("./utiltis/httpStatsRes.js");
-const path=require("node:path")
+const path=require("path")
 
 mongoose.connect(process.env.MONGO_URL).then(() => console.log("connect to Mongoose"))
 app.use(express.json());
